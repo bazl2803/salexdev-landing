@@ -120,3 +120,17 @@
     @apply bg-background text-foreground;
   }
 }
+
+* {
+  box-sizing: border-box;
+  overscroll-behavior: content;
+  scroll-behavior: smooth;
+}
+
+section {
+  @apply flex flex-col gap-y-8;
+}
+
+body {
+  @apply bg-background text-foreground;
+}

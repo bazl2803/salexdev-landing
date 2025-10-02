@@ -1,41 +1,61 @@
+import { IconName } from "lucide-react/dynamic";
 import { ServiceCard } from "./service-card";
 
 export const Services = () => {
-  const services = [
+  const services: Array<{
+    icon: IconName;
+    title: string;
+    description: string;
+  }> = [
     {
-      title: "Web Development",
-      description: "We provide a full range of web development services.",
+      icon: "globe",
+      title: "Desarrollo Web",
+      description: "Proporcionamos una gama completa de servicios de desarrollo web.",
     },
     {
-      title: "Mobile Development",
-      description: "We provide a full range of mobile development services.",
+      icon: "smartphone",
+      title: "Desarrollo Móvil",
+      description: "Proporcionamos una gama completa de servicios de desarrollo móvil.",
     },
     {
+      icon: "pencil-ruler",
       title: "UI/UX Design",
-      description: "We provide a full range of UI/UX design services.",
+      description: "Proporcionamos una gama completa de servicios de diseño UI/UX.",
     },
     {
+      icon: "cloudy",
       title: "Cloud Computing",
-      description: "We provide a full range of cloud computing services.",
+      description: "Proporcionamos una gama completa de servicios de cloud computing.",
     },
     {
+      icon: "workflow",
       title: "DevOps",
-      description: "We provide a full range of DevOps services.",
+      description: "Proporcionamos una gama completa de servicios de DevOps.",
+    },
+    {
+      icon: "database",
+      title: "Database Management",
+      description: "Proporcionamos una gama completa de servicios de gestión de bases de datos.",
     },
   ];
 
   return (
     <>
-      <h3>Nuestros Servicios</h3>
-      <div className="grid grid-cols-2 justify-items-start gap-2">
-        {services.map((service, index) => (
-          <ServiceCard
-            key={index}
-            title={service.title}
-            description={service.description}
-          />
-        ))}
-      </div>
+      <section>
+        <h3 className="mb-4 text-center text-2xl font-semibold">
+          Nuestros Servicios
+        </h3>
+        <div className="grid grid-cols-2 justify-items-start gap-4 px-8 md:grid-cols-3">
+          {services.map((service, index) => (
+            <ServiceCard
+              key={index}
+              icon={service.icon}
+              title={service.title}
+              description={service.description}
+            />
+          ))}
+        </div>
+      </section>
     </>
   );
 };
