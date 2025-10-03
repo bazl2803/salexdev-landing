@@ -1,4 +1,3 @@
-import { LucideMail } from "lucide-react";
 import { FooterContactItem } from "./footer-contact-item";
 
 export const FooterContact = () => {

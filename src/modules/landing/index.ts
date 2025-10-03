@@ -4,3 +4,4 @@ export * from "./appbar/appbar";
 export * from "./services/services";
 export * from "./projects/projects";
 export * from "./footer/footer";
+export * from "./about/about";

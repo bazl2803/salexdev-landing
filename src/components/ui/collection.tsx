@@ -29,11 +29,10 @@ function Collection({ children }: CollectionProps) {
 /**
  * Collection Item Component
  */
-interface CollectionItemProps
-  extends React.DetailedHTMLProps<
-    React.HTMLAttributes<HTMLDivElement>,
-    HTMLDivElement
-  > {}
+type CollectionItemProps = React.DetailedHTMLProps<
+  React.HTMLAttributes<HTMLDivElement>,
+  HTMLDivElement
+>;
 
 function CollectionItem({ className, ...props }: CollectionItemProps) {
   return <div className={`snap-start ${className}`} {...props} />;

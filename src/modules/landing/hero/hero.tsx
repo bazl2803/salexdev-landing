@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { LucideBuilding, LucideComputer, LucideStars } from "lucide-react";
+import { LucideStars } from "lucide-react";
 
 export const Hero = () => {
   // Hero spanish dictionary
@@ -7,7 +7,7 @@ export const Hero = () => {
     badge: "Consultora Tecnológica",
     text: "Soluciones Digitales para impulsar tus Ideas",
     description:
-      "Somos una empresa miembro de Salex Corporation dedicada al desarrollo de todo tipo de soluciones de tecnología",
+      "Gestiona, Agila y Optimiza los procesos de tu empresa con soluciones tecnológicas de vanguaria",
     ctaButton: "Contáctanos",
     projectsButton: "Ver Proyectos",
   };

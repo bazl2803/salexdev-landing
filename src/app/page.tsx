@@ -1,4 +1,5 @@
 import {
+  About,
   Appbar,
   Footer,
   Hero,
@@ -23,6 +24,7 @@ export default function Home() {
       </header>
 
       <main className="mx-auto flex max-w-7xl flex-col gap-16 px-8">
+        <About/>
         <Services />
         <Projects />
       </main>

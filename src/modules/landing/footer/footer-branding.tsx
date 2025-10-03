@@ -14,9 +14,7 @@ export const FooterBranding = () => {
         />
 
         <p className="max-w-sm text-sm text-pretty text-gray-400">
-          Salex Dev es una consultora tecnológica dedicada a ofrecer soluciones
-          innovadoras y personalizadas para impulsar el crecimiento de tu
-          negocio en la era digital.
+          Somos una rama de Salex Corporation dedicada al desarrollo de todo tipo de soluciones de tecnología
         </p>
 
         <FooterSocial />
