@@ -12,10 +12,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className="dark">
-      <body
-        className={"max-w-[1280px] mx-auto font-sans antialiased"}
-      >
+    <html lang="es">
+      <body className={"mx-auto max-w-7xl font-sans antialiased"}>
         {children}
       </body>
     </html>

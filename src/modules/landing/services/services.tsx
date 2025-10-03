@@ -42,7 +42,7 @@ export const Services = () => {
   return (
     <>
       <section>
-        <h3 className="mb-4 text-center text-2xl font-semibold">
+        <h3 className="mb-4 text-center text-3xl font-semibold">
           Nuestros Servicios
         </h3>
         <div className="grid grid-cols-2 justify-items-start gap-4 px-8 md:grid-cols-3">

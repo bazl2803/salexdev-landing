@@ -130,7 +130,3 @@
 section {
   @apply flex flex-col gap-y-8;
 }
-
-body {
-  @apply bg-background text-foreground;
-}

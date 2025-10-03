@@ -1,33 +1,36 @@
 import { Appbar, Hero, Projects, Services } from "@/modules/landing";
+import { HeroBg } from "@/modules/landing/hero/hero-bg";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex w-full flex-col gap-16">
-      <header className="pb-8 md:grid md:grid-cols-2 md:gap-8">
+    <div className="flex h-screen w-full flex-col gap-16">
+      <header className="grid md:grid-cols-2">
         {/** Main Hero */}
-        <div className="flex grow flex-col gap-12 md:col-start-1 md:col-end-2 border border-red-500">
+        <div className="flex flex-col gap-12">
           <Appbar />
           <Hero />
         </div>
 
-        {/** Background */}
-        <div
-          className="absolute -z-10 h-full w-full grow object-cover md:col-start-2 md:col-end-3 border border-yellow-500"
-          style={{
-            filter: "brightness(115%) hue-rotate(180deg)",
-            backgroundImage: `url('/dark-bg.jpg')`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "no-repeat",
-            WebkitMaskImage:
-              "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 50%)",
-          }}
-        />
+        <HeroBg />
       </header>
-      <main className="flex flex-col gap-16">
+
+      <main className="mx-auto flex max-w-7xl flex-col gap-16 px-8">
         <Services />
         <Projects />
       </main>
+
+      <footer className="bg-black md:grid md:grid-cols-3">
+        <div className="flex flex-col gap-4">
+          <Image
+            className="h-40 w-auto"
+            src={"/logo.png"}
+            width={100}
+            height={100}
+            alt="logo"
+          />
+        </div>
+      </footer>
     </div>
   );
 }
