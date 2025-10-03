@@ -14,7 +14,7 @@ export const FooterBranding = () => {
         />
 
         <p className="max-w-sm text-sm text-pretty text-gray-400">
-          Somos una rama de Salex Corporation dedicada al desarrollo de todo tipo de soluciones de tecnología
+          Una rama de Salex Corporation dedicada al desarrollo de todo tipo de soluciones de tecnología
         </p>
 
         <FooterSocial />

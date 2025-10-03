@@ -24,7 +24,7 @@ export const Hero = () => {
           {HeroDictionary.text}
         </h1>
 
-        <p>{HeroDictionary.description}</p>
+        <p className="text-lg">{HeroDictionary.description}</p>
 
         <div className="flex flex-nowrap gap-2">
           <a href="#contact">
