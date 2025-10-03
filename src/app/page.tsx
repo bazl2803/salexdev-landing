@@ -1,18 +1,25 @@
-import { Appbar, Hero, Projects, Services } from "@/modules/landing";
-import { HeroBg } from "@/modules/landing/hero/hero-bg";
-import Image from "next/image";
+import {
+  Appbar,
+  Footer,
+  Hero,
+  HeroBg,
+  Projects,
+  Services,
+} from "@/modules/landing";
 
 export default function Home() {
   return (
-    <div className="flex h-screen w-full flex-col gap-16">
-      <header className="grid md:grid-cols-2">
-        {/** Main Hero */}
-        <div className="flex flex-col gap-12">
+    <div className="flex w-full flex-col gap-16">
+      <header className="sm:grid-template-rows-[auto_auto] mx-auto grid max-w-7xl gap-8 sm:grid-cols-2">
+        <div className="sm:col-start-1 sm:col-end-3 sm:row-start-1">
           <Appbar />
+        </div>
+        <div className="sm:col-start-1 sm:row-start-2">
           <Hero />
         </div>
-
-        <HeroBg />
+        <div className="sm:col-start-2 sm:row-start-2 sm:row-end-3">
+          <HeroBg />
+        </div>
       </header>
 
       <main className="mx-auto flex max-w-7xl flex-col gap-16 px-8">
@@ -20,15 +27,9 @@ export default function Home() {
         <Projects />
       </main>
 
-      <footer className="bg-black md:grid md:grid-cols-3">
-        <div className="flex flex-col gap-4">
-          <Image
-            className="h-40 w-auto"
-            src={"/logo.png"}
-            width={100}
-            height={100}
-            alt="logo"
-          />
+      <footer className="bg-black">
+        <div className="mx-auto grid w-full max-w-7xl gap-8 p-8 md:grid-cols-3">
+          <Footer />
         </div>
       </footer>
     </div>

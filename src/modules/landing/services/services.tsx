@@ -10,22 +10,26 @@ export const Services = () => {
     {
       icon: "globe",
       title: "Desarrollo Web",
-      description: "Proporcionamos una gama completa de servicios de desarrollo web.",
+      description:
+        "Proporcionamos una gama completa de servicios de desarrollo web.",
     },
     {
       icon: "smartphone",
       title: "Desarrollo Móvil",
-      description: "Proporcionamos una gama completa de servicios de desarrollo móvil.",
+      description:
+        "Proporcionamos una gama completa de servicios de desarrollo móvil.",
     },
     {
       icon: "pencil-ruler",
       title: "UI/UX Design",
-      description: "Proporcionamos una gama completa de servicios de diseño UI/UX.",
+      description:
+        "Proporcionamos una gama completa de servicios de diseño UI/UX.",
     },
     {
       icon: "cloudy",
       title: "Cloud Computing",
-      description: "Proporcionamos una gama completa de servicios de cloud computing.",
+      description:
+        "Proporcionamos una gama completa de servicios de cloud computing.",
     },
     {
       icon: "workflow",
@@ -35,17 +39,22 @@ export const Services = () => {
     {
       icon: "database",
       title: "Database Management",
-      description: "Proporcionamos una gama completa de servicios de gestión de bases de datos.",
+      description:
+        "Proporcionamos una gama completa de servicios de gestión de bases de datos.",
     },
   ];
 
   return (
     <>
       <section>
-        <h3 className="mb-4 text-center text-3xl font-semibold">
-          Nuestros Servicios
-        </h3>
-        <div className="grid grid-cols-2 justify-items-start gap-4 px-8 md:grid-cols-3">
+        <div className="space-y-2">
+          <h3 className="mb-4 text-3xl font-bold">Nuestros Servicios</h3>
+          <p className="mb-8 text-gray-600">
+            Ofrecemos una amplia gama de servicios para ayudar a tu negocio a
+            crecer en la era digital.
+          </p>
+        </div>
+        <div className="grid sm:grid-cols-2 justify-items-start gap-4 md:grid-cols-3">
           {services.map((service, index) => (
             <ServiceCard
               key={index}

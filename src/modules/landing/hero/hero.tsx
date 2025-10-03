@@ -7,7 +7,7 @@ export const Hero = () => {
     badge: "Consultora Tecnológica",
     text: "Soluciones Digitales para impulsar tus Ideas",
     description:
-      "Somos una empresa miembro de la Salex Corporation dedicada al desarrollo de todo tipo de soluciones de tecnología",
+      "Somos una empresa miembro de Salex Corporation dedicada al desarrollo de todo tipo de soluciones de tecnología",
     ctaButton: "Contáctanos",
     projectsButton: "Ver Proyectos",
   };
@@ -27,7 +27,9 @@ export const Hero = () => {
         <p>{HeroDictionary.description}</p>
 
         <div className="flex flex-nowrap gap-2">
-          <Button>{HeroDictionary.ctaButton}</Button>
+          <a href="#contact">
+            <Button>{HeroDictionary.ctaButton}</Button>
+          </a>
           <a href="#projects">
             <Button variant={"outline"}>{HeroDictionary.projectsButton}</Button>
           </a>

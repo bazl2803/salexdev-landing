@@ -10,7 +10,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = (props) => {
   return (
     <>
       <div
-        className="flex flex-col gap-1 rounded-md border border-neutral-300 bg-white p-4 shadow-md dark:border-neutral-700 dark:bg-neutral-800"
+        className="flex flex-col gap-1 bg-gradient-to-br bg-[repeating-linear-gradient(135deg,#f3f4f6_0px,#f3f4f6_20px,#e5e7eb_20px,#e5e7eb_40px)] from-gray-50 via-gray-100 to-gray-200 p-2"
         {...props}
       >
         <DynamicIcon className="mb-4" name={props.icon} />

@@ -44,9 +44,13 @@ export const Projects = () => {
   return (
     <>
       <section id="projects">
-        <h3 className="p-4 text-center text-3xl font-semibold">
-          Nuestra Experiencia
-        </h3>
+        <div className="space-y-2">
+          <h3 className="mb-4 text-3xl font-bold">Nuestros Proyectos</h3>
+          <p className="mb-8 text-gray-600">
+            Aquí hay algunos de nuestros proyectos recientes que demuestran
+            nuestras capacidades y experiencia.
+          </p>
+        </div>
 
         <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project) => (
