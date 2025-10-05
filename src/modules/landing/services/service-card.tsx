@@ -10,7 +10,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = (props) => {
   return (
     <>
       <div
-        className="border border-primary rounded-xl flex flex-col gap-1 bg-white bg-gradient-to-br p-4"
+        className="flex flex-col transition-[scale] gap-1 rounded-xl bg-white bg-gradient-to-br p-4 shadow hover:scale-105"
         {...props}
       >
         <DynamicIcon className="mb-4" name={props.icon} />

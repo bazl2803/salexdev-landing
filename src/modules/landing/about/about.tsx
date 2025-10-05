@@ -14,7 +14,7 @@ export const About = () => {
         </div>
 
         <Image
-          className="h-auto max-h-32 w-fit object-cover md:col-start-1 md:row-start-1"
+          className="h-64 w-auto object-cover md:col-start-1 md:row-start-1"
           src={"/1000002212.png"}
           alt="Un programador en su hábitat natural"
           sizes="(max-width: 768px) 100vw,

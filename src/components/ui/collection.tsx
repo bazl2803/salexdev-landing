@@ -12,7 +12,7 @@ function Collection({ children }: CollectionProps) {
   );
 }
 
-function Item({ children }: any) {
+function Item({ children }: { children: React.ReactNode }) {
   return <div className="snap-start">{children}</div>;
 }
 

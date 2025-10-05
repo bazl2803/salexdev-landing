@@ -1,5 +1,4 @@
 import React from "react";
-import { Collection } from "@/components/ui/collection";
 import { TestimonialCard } from "@/modules/landing/testimonials/testimonial-card";
 import { Testimonial } from "@/modules/landing/testimonials/testimonial";
 
