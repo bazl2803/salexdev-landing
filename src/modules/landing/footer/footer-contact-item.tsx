@@ -7,7 +7,12 @@ export const FooterContactItem: React.FC<{
 }> = ({ iconName, description, href }) => {
   return (
     <div className="flex items-center gap-2">
-      <DynamicIcon name={iconName} color="white" size={16} />{" "}
+      <DynamicIcon
+        className="h-4 w-4"
+        name={iconName}
+        color="white"
+        size={16}
+      />{" "}
       <a href={href}>{description}</a>
     </div>
   );

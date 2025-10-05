@@ -10,18 +10,23 @@ import {
   Testimonials,
 } from "@/modules/landing";
 import { FabButton } from "@/components/ui/fab-button";
-import { IconBrandWhatsapp } from "@tabler/icons-react";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <div className="flex w-full flex-col gap-8">
       <a href="whatsapp://send?phone=50370181141">
-        <FabButton className={"bg-[green] text-white"}>
-          <IconBrandWhatsapp size={32} />
+        <FabButton className={"bg-[#00805a] text-white"}>
+          <Image
+            src="/whatsapp-icon.png"
+            alt="WhatsApp"
+            width={32}
+            height={32}
+          />
         </FabButton>
       </a>
 
-      <header className="md:grid-template-rows-[auto_auto] mx-auto grid max-w-7xl items-center gap-8 md:grid-cols-2">
+      <header className="md:grid-template-rows-[auto_auto] mx-auto grid max-w-7xl items-center gap-x-8 gap-y-4 px-8 md:grid-cols-2">
         <div className="md:col-start-1 md:col-end-3 md:row-start-1">
           <Appbar />
         </div>
@@ -33,7 +38,7 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="mx-auto flex max-w-7xl flex-col gap-8">
+      <main className="mx-auto flex max-w-7xl flex-col gap-8 px-8">
         <About />
         <Services />
         <Technologies />
@@ -42,7 +47,7 @@ export default function Home() {
       </main>
 
       <footer className="bg-black">
-        <div className="mx-auto grid w-full max-w-7xl gap-8 p-8 md:grid-cols-3">
+        <div className="mx-auto grid w-full max-w-7xl gap-8 p-8 px-8 md:grid-cols-3">
           <Footer />
         </div>
       </footer>

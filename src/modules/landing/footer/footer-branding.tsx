@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { FooterSocial } from "./footer-social";
 
 export const FooterBranding = () => {
   return (
@@ -14,10 +13,9 @@ export const FooterBranding = () => {
         />
 
         <p className="max-w-sm text-sm text-pretty text-gray-400">
-          Una rama de Salex Corporation dedicada al desarrollo de todo tipo de soluciones de tecnología
+          Una rama de Salex Corporation dedicada al desarrollo de todo tipo de
+          soluciones de tecnología
         </p>
-
-        <FooterSocial />
       </div>
     </>
   );
