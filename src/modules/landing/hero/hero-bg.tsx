@@ -4,7 +4,7 @@ export const HeroBg = () => {
   return (
     <>
       <Image
-        className="h-auto w-full aling-self-center object-cover md:h-full"
+        className="h-auto w-auto object-cover md:h-full"
         src="/hero-bg.png"
         alt="Hero Background"
         width={1920}

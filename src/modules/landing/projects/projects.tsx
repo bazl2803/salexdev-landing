@@ -46,7 +46,7 @@ export const Projects = () => {
       <section id="projects">
         <div className="space-y-2">
           <h3 className="mb-4 text-3xl font-bold">Nuestros Proyectos</h3>
-          <p className="mb-8 text-lg text-gray-600">
+          <p className="text-lg text-gray-600">
             Aquí hay algunos de nuestros proyectos recientes que demuestran
             nuestras capacidades y experiencia.
           </p>

@@ -1,46 +1,21 @@
-"use client";
-
 import React from "react";
 
-/**
- * Collection Component
- */
-interface CollectionProps
-  extends React.DetailedHTMLProps<
-    React.HTMLAttributes<HTMLDivElement>,
-    HTMLDivElement
-  > {
-  children:
-    | React.ReactElement<typeof CollectionItem>
-    | React.ReactElement<typeof CollectionItem>[];
+interface CollectionProps {
+  children: React.ReactElement<typeof Item> | React.ReactElement<typeof Item>[];
 }
 
 function Collection({ children }: CollectionProps) {
   return (
-    <div
-      className="flex snap-x snap-proximity flex-row flex-nowrap items-center gap-4 overflow-x-auto py-2"
-      style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-    >
+    <div className="flex snap-x snap-proximity flex-row flex-nowrap items-center gap-4 overflow-x-auto">
       {children}
     </div>
   );
 }
 
-/**
- * Collection Item Component
- */
-type CollectionItemProps = React.DetailedHTMLProps<
-  React.HTMLAttributes<HTMLDivElement>,
-  HTMLDivElement
->;
-
-function CollectionItem({ className, ...props }: CollectionItemProps) {
-  return <div className={`snap-start ${className}`} {...props} />;
+function Item({ children }: any) {
+  return <div className="snap-start">{children}</div>;
 }
 
-/**
- * Assign Item as a static property of Collection
- */
-Collection.Item = CollectionItem;
+Collection.Item = Item;
 
-export { Collection };
+export { Collection, Item };

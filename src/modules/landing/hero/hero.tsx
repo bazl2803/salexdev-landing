@@ -14,15 +14,17 @@ export const Hero = () => {
 
   return (
     <>
-      <div className="flex flex-col gap-8 px-8 select-none">
-        <div className="flex w-fit flex-nowrap items-center gap-2 rounded-full border border-yellow-600 bg-yellow-50 px-4 py-1 font-medium text-yellow-600">
-          <LucideStars size={16} />
-          <span>{HeroDictionary.badge}</span>
-        </div>
+      <div className="flex flex-col gap-8 text-balance select-none">
+        <div className={"space-y-4"}>
+          <div className="flex w-fit flex-nowrap items-center gap-2 rounded-full border border-yellow-600 bg-yellow-50 px-4 py-1 text-xs font-medium text-yellow-600">
+            <LucideStars size={16} />
+            <span>{HeroDictionary.badge}</span>
+          </div>
 
-        <h1 className="text-5xl font-bold text-balance">
-          {HeroDictionary.text}
-        </h1>
+          <h1 className="text-5xl font-bold text-balance">
+            {HeroDictionary.text}
+          </h1>
+        </div>
 
         <p className="text-lg">{HeroDictionary.description}</p>
 
