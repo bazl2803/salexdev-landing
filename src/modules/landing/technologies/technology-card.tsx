@@ -13,7 +13,7 @@ export const TechnologyCard: React.FC<TechnologyCardProps> = ({
   description,
 }) => {
   return (
-    <div className="space-y-4">
+    <div className="space-y-4 rounded-md p-4 shadow transition-[scale] hover:scale-105">
       <div className="aspect-square h-12 w-12">
         <Image
           className="object-contain"

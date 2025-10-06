@@ -42,10 +42,18 @@ export const Technologies = () => {
   ];
 
   return (
-    <section>
-      <h3 className="mb-4 text-3xl font-bold">Nuestras Herramientas</h3>
+    <section id="technologies">
+      <div className="mb-4 space-y-2 text-center">
+        <h3 className="text-4xl font-bold">
+          Tecnologías con las que Trabajamos
+        </h3>
+        <p className="mb-8 text-lg text-gray-600">
+          Trabajamos con grandes herramientas y las tecnologías más innovadoras
+          del mercado.
+        </p>
+      </div>
 
-      <div className="grid grid-cols-2 gap-8 md:grid-cols-3">
+      <div className="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4">
         {technologies.map((technology) => (
           <TechnologyCard key={technology.name} {...technology} />
         ))}

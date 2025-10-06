@@ -3,7 +3,6 @@ import {
   Appbar,
   Footer,
   Hero,
-  HeroBg,
   Projects,
   Services,
   Technologies,
@@ -14,9 +13,9 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex w-full flex-col gap-8">
+    <div className="flex w-full flex-col gap-16">
       <a href="whatsapp://send?phone=50370181141">
-        <FabButton className={"bg-[#00805a] text-white"}>
+        <FabButton className={"bg-[#25D366] text-white"}>
           <Image
             src="/whatsapp-icon.png"
             alt="WhatsApp"
@@ -26,19 +25,12 @@ export default function Home() {
         </FabButton>
       </a>
 
-      <header className="md:grid-template-rows-[auto_auto] mx-auto grid max-w-7xl items-center gap-x-8 gap-y-4 px-8 md:grid-cols-2">
-        <div className="md:col-start-1 md:col-end-3 md:row-start-1">
-          <Appbar />
-        </div>
-        <div className="md:col-start-1 md:row-start-2">
-          <Hero />
-        </div>
-        <div className="justify-self-end md:col-start-2 md:row-start-2 md:row-end-3">
-          <HeroBg />
-        </div>
+      <header className="flex flex-col gap-y-8 px-8">
+        <Appbar />
+        <Hero />
       </header>
 
-      <main className="mx-auto flex max-w-7xl flex-col gap-8 px-8">
+      <main className="mx-auto flex max-w-7xl flex-col gap-24 px-8">
         <About />
         <Services />
         <Technologies />

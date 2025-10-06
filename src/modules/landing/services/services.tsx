@@ -46,16 +46,16 @@ export const Services = () => {
 
   return (
     <>
-      <section>
-        <div className="space-y-2">
-          <h3 className="mb-4 text-3xl font-bold">Nuestros Servicios</h3>
+      <section id="services">
+        <div className="space-y-2 text-center">
+          <h3 className="text-4xl font-bold">Nuestros Servicios</h3>
           <p className="mb-8 text-lg text-gray-600">
             Ofrecemos una amplia gama de servicios para ayudar a tu negocio a
             crecer en la era digital.
           </p>
         </div>
 
-        <div className="grid justify-items-start gap-4 sm:grid-cols-2 md:grid-cols-3">
+        <div className="grid justify-items-start gap-6 sm:grid-cols-2 md:grid-cols-3">
           {services.map((service, index) => (
             <ServiceCard
               key={index}

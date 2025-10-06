@@ -17,7 +17,7 @@ export const TestimonialCard: React.FC<TestimonialCardProps> = ({
   testimonial,
 }) => {
   return (
-    <Card className={"h-auto w-full break-inside-avoid"}>
+    <Card className={"h-auto w-full break-inside-avoid hover:scale-105"}>
       <CardHeader
         className={"grid grid-cols-[auto_1fr] grid-rows-[auto_auto] gap-x-4"}
       >

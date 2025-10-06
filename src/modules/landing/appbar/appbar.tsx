@@ -11,6 +11,23 @@ export const Appbar = () => {
             width={100}
             height={100}
           />
+
+          <nav>
+            <ul className="flex gap-4">
+              <li>
+                <a href="#services">Servicios</a>
+              </li>
+              <li>
+                <a href="#technologies">Tecnologías</a>
+              </li>
+              <li>
+                <a href="#projects">Nuestra Experiencia</a>
+              </li>
+              <li>
+                <a href="#contact">Contacto</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </>
